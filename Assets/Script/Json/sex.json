@@ -1,0 +1,11 @@
+{
+  "name": "Slim Shady",
+  "gender": "Male",
+  "age":  46,
+  "alvums": [
+    "Infinite",
+    "The Silme Shady LP",
+    "Encore",
+    "Recovery"
+  ]
+}
