@@ -20,7 +20,6 @@ namespace ClearSky
             anim.SetBool("isLookUp", false);
             anim.SetBool("isRun", false);
             anim.SetBool("isJump", false);
-            anim.SetBool("test", false);
         }
         public void Idle()
         {
@@ -47,13 +46,6 @@ namespace ClearSky
             ResetAnimation();
             anim.SetTrigger("die");
         }
-
-        public void Test()
-        {
-            ResetAnimation();
-            anim.SetTrigger("test");
-        }
-
         public void LookUp()
         {
             ResetAnimation();
