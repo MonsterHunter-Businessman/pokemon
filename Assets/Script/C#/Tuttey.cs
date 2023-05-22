@@ -17,7 +17,7 @@ public class Tuttey : MonoBehaviour
 
 
 
-    Vector2 targetPostion;
+    public Vector2 targetPostion;
 
     public Vector3 mPosition;
 
@@ -56,6 +56,17 @@ public class Tuttey : MonoBehaviour
     }
 
     void Update() {
+
+        if (yes)
+        {
+            Gizmos.DrawWireCube(transform.position, EAsports);
+        } else
+        {
+            Gizmos.DrawWireCube(transform.position, new Vector3(0f, 0f, 0f));
+        }
+
+
+
 
         mPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition); // 마우스 좌표 저장
 
@@ -120,6 +131,8 @@ public class Tuttey : MonoBehaviour
     {
         gameObject.transform.position = new Vector2(mPosition.x, mPosition.y);
         range.transform.position = new Vector2(targetPostion.x, targetPostion.y);
+
+        TXT.transform.position = new Vector3(targetPostion.x, targetPostion.y + 0.8f, 0f);
     }
 
     void OnMouseUp()
@@ -133,6 +146,7 @@ public class Tuttey : MonoBehaviour
     {
         if (col.gameObject.tag == "DropArea") {
             targetPostion = col.transform.position;
+            
             //firePoint = col.transform.position;
             yes = true;
             //Debug.Log("충돌");
