@@ -1,1 +1,11 @@
 Assets/Text/TextMesh[[:space:]]Pro/Resources/Fonts[[:space:]]&[[:space:]]Materials/PyeongChangPeace-Bold[[:space:]]SDF.asset filter=lfs diff=lfs merge=lfs -text
+ProjectSettings filter=lfs diff=lfs merge=lfs -text
+Tower.sln filter=lfs diff=lfs merge=lfs -text
+UserSettings filter=lfs diff=lfs merge=lfs -text
+Assembly-CSharp-firstpass.csproj filter=lfs diff=lfs merge=lfs -text
+Assembly-CSharp.csproj filter=lfs diff=lfs merge=lfs -text
+Assets filter=lfs diff=lfs merge=lfs -text
+Narsha_tower filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+obj filter=lfs diff=lfs merge=lfs -text
+pokemon.sln filter=lfs diff=lfs merge=lfs -text
