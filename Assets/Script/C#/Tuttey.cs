@@ -57,13 +57,6 @@ public class Tuttey : MonoBehaviour
 
     void Update() {
 
-        if (yes)
-        {
-            Gizmos.DrawWireCube(transform.position, EAsports);
-        } else
-        {
-            Gizmos.DrawWireCube(transform.position, new Vector3(0f, 0f, 0f));
-        }
 
 
 
@@ -150,9 +143,13 @@ public class Tuttey : MonoBehaviour
             //firePoint = col.transform.position;
             yes = true;
             //Debug.Log("Ãæµ¹");
+
+            Gizmos.DrawWireCube(transform.position, EAsports);
         } else {
             targetPostion = new Vector2(-14, -8);
             yes = false;
+
+            Gizmos.DrawWireCube(transform.position, new Vector3(0f, 0f, 0f));
         }
 
         if (col.gameObject.tag == "Test_M_Attak") {
